@@ -1,0 +1,156 @@
+/* css reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* nav */
+
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: row;
+  padding-right: 20px;
+}
+
+.nav li {
+  padding: 40px 0px;
+  padding-right: 30px;
+}
+
+.nav li a {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  transition: all 0.15s ease;
+}
+
+/* header */
+
+.landing-header {
+  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("../images/red-landing.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.landing-header h2 {
+  color: white;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 25px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.landing-header h1 {
+  color: white;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+
+.typeform-share {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff0000;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 50px;
+  text-align: center;
+  padding: 0 33px;
+  height: 50px;
+  border-radius: 5px;
+  max-width: 100%;
+  white-space: nowrap;
+  transition: all 0.15s ease;
+}
+
+/* about */
+
+#about {
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+#about h1 {
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 60px;
+  padding: 20px;
+}
+
+#about p {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* hover and active effects */
+
+.typeform-share:hover {
+  background-color: #db1010;
+}
+
+.nav li a:hover {
+  color: #ff8c8b;
+}
