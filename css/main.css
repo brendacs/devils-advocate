@@ -50,6 +50,11 @@ table {
   border-spacing: 0;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* nav */
 
 .nav {
@@ -62,7 +67,7 @@ table {
 }
 
 .nav li {
-  padding: 40px 0px;
+  padding: 30px 0px;
   padding-right: 30px;
 }
 
@@ -70,7 +75,7 @@ table {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-decoration: none;
-  color: white;
+  color: black;
   font-size: 14px;
   transition: all 0.15s ease;
 }
@@ -78,10 +83,6 @@ table {
 /* header */
 
 .landing-header {
-  background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("../images/red-landing.jpg");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -91,26 +92,24 @@ table {
   text-align: center;
 }
 
+.header-logo {
+  margin-top: -20px;
+  width: 60%;
+}
+
 .landing-header h2 {
-  color: white;
+  color: black;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 25px;
-  margin-bottom: 30px;
+  margin: 30px 0 60px 0;
   text-transform: uppercase;
 }
 
-.landing-header h1 {
-  color: white;
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-  font-size: 80px;
-  margin-bottom: 40px;
-}
-
-.typeform-share {
+.typeform-button {
   display: inline-block;
   text-decoration: none;
-  background-color: #ff0000;
-  color: white;
+  background-color: none;
+  color: #CA2128;
   cursor: pointer;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
@@ -118,39 +117,39 @@ table {
   line-height: 50px;
   text-align: center;
   padding: 0 33px;
-  height: 50px;
+  height: 55px;
   border-radius: 5px;
+  border: 3px solid #CA2128;
   max-width: 100%;
   white-space: nowrap;
   transition: all 0.15s ease;
 }
 
-/* about */
+/* canvas */
 
-#about {
+.canvas {
+  position:absolute;
   height: 100vh;
-  text-align: center;
-  padding: 20px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  background-color: none;
+  z-index: -1;
 }
 
-#about h1 {
-  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
-  font-size: 60px;
-  padding: 20px;
-}
-
-#about p {
-  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  padding: 20px;
+canvas {
+  background-color: #fff;
 }
 
 /* hover and active effects */
 
-.typeform-share:hover {
-  background-color: #db1010;
+.typeform-button:hover {
+  background-color: #CA2128;
+  color: white;
 }
 
 .nav li a:hover {
-  color: #ff8c8b;
+  color: #CA2128;
 }
