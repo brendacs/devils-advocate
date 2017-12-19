@@ -19,6 +19,7 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  text-decoration: none;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -141,6 +142,44 @@ table {
 
 canvas {
   background-color: #fff;
+}
+
+/* typeform iframe */
+
+.typeform-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.typeform-iframe {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  border: 0;
+}
+
+/* footer */
+
+.footer {
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #CA2128;
+}
+
+.footer span {
+  color: #CA2128;
 }
 
 /* hover and active effects */
