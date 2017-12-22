@@ -39,3 +39,10 @@
   top: 0;
   border: 0;
 }
+
+/* hover */
+
+.typeform-button:hover {
+  background-color: $brand-color;
+  color: white;
+}

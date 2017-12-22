@@ -8,13 +8,4 @@
         "typeform",
         "footer";
 
-/* hover and active effects */
-
-.nav li a:hover {
-  color: $brand-color;
-}
-
-.typeform-button:hover {
-  background-color: $brand-color;
-  color: white;
-}
+@import "hamburgers/hamburgers.scss"
