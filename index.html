@@ -15,20 +15,19 @@
       <title>Devil's Advocate</title>
 
       <!-- Custom Fonts -->
-      <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
       <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
       <link href="https://fonts.googleapis.com/css?family=PT+Sans|Roboto" rel="stylesheet">
 
-      <!-- Custom CSS -->
+      <!-- CSS -->
       <link href="css/main.min.css" rel="stylesheet" type="text/css" />
 
       <!-- Scripts -->
       <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <!-- <script type="text/javascript" src="js/particles.js" defer></script> -->
       <script type="text/javascript" src="js/smoothScroll.js" async></script>
-      <script type="text/javascript" src="js/hamburger.js" async></script>
+      <script type="text/javascript" src="js/menuActions.js" async></script>
       <script type="text/javascript" src="https://embed.typeform.com/embed.js" async></script>
+      <!-- <script type="text/javascript" src="js/particles.js" defer></script> -->
 
   </head>
   <body>
@@ -41,16 +40,32 @@
           </span>
         </button>
         <ul class="nav-list list-out">
-          <li><a href="#about">About</a></li>
+          <li><a id="home-link" href="#">Home</a></li>
+          <li><a id="about-link" href="#">About</a></li>
           <li><a href="#archives">Archives</a></li>
           <li><a href="#blog">Blog</a></li>
         </ul>
       </nav>
 
       <header class="landing-header">
-        <img class="header-logo" src="images/DA-header-logo-tran.png" />
-        <h2>Escape the echo chamber</h2>
-        <a href="#survey" class="typeform-button">Take Survey</a>
+        <div id="landing">
+          <img class="header-logo" src="images/DA-header-logo-tran.png" />
+          <h2>Escape the echo chamber</h2>
+          <a href="#survey" class="typeform-button">Sign Up</a>
+        </div>
+        <div id="about" class="hide">
+          <img class="about-logo" src="images/DA-header-logo-tran.png" />
+          <h2>About</h2>
+          <p>
+            Devil’s Advocate is a project dedicated to helping you escape your political bubble. We hand-select one smart, thoughtful article, video, or podcast a week you’ll disagree with and deliver it to your inbox. We give you access to the best of the other side of the argument. We’re doing this because our civil discourse… well it’s hardly a shining example of Socratic dialogue these days. Research indicates partisan hatred across the developed world is skyrocketing. We’re choosing to live, work, and talk only with people who believe the same things we do - and we’re villainizing everyone else. The internet and social media are making it worse. We think that ought to change. We hope you do too.
+          </p>
+          <p>
+            Join a growing community of people interested in being better, more open-minded friends, thinkers, and citizens. Let us help you be your own devil’s advocate. 
+          </p>
+          <p>
+            Hope you hate it,<br/>DA
+          </p>
+        </div>
       </header>
 
       <!-- <div class="canvas">
@@ -59,7 +74,7 @@
       </div> -->
 
       <div id="survey" class="typeform-container">
-        <iframe class="typeform-iframe" id="typeform-full" width="100%" height="100%" frameborder="0" src="https://brenda329.typeform.com/to/YGHTnX"></iframe>
+        <iframe class="typeform-iframe" id="typeform-full" width="100%" height="100%" frameborder="0" src="https://devilsadvocate1.typeform.com/to/xqCi7y"></iframe>
       </div>
 
       <footer class="footer">

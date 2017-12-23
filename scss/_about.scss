@@ -1,0 +1,15 @@
+#about {
+  .about-logo {
+    width: 400px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  p {
+    @include sans-serif-font;
+    padding: 0px 200px 50px 200px;
+    line-height: 1.5;
+  }
+}

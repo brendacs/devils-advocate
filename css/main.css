@@ -19,7 +19,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 #nav #logo { width: 50px; margin-top: 5px; margin-left: 10px; }
 #nav .hamburger { position: absolute; top: 3px; right: 10px; }
 
-.nav-list { position: absolute; top: 10; padding-right: 30px; transition: all 0.4s ease; overflow: hidden; }
+.nav-list { position: absolute; top: 10; padding-right: 30px; transition: all 0.4s ease; }
 .nav-list li { padding-top: 20px; text-align: right; }
 .nav-list li a { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-decoration: none; color: #000; font-size: 14px; transition: all 0.15s ease; }
 
@@ -50,6 +50,10 @@ canvas { background-color: #fff;
 
 /* hover */
 .typeform-button:hover { background-color: #CA2128; color: white; }
+
+#about .about-logo { width: 400px; }
+#about h1 { font-size: 20px; }
+#about p { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 0px 200px 50px 200px; line-height: 1.5; }
 
 .footer { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; height: 50px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0px 20px; font-size: 14px; }
 .footer a, .footer span { color: #CA2128; }
@@ -104,6 +108,10 @@ canvas { background-color: #fff;
 .hamburger--spring-r.is-active .hamburger-inner::after { top: 0; opacity: 0; transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), opacity 0s 0.22s linear; }
 .hamburger--spring-r.is-active .hamburger-inner::before { top: 0; transform: rotate(90deg); transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1); }
 
+body { width: 100vw; overflow-x: hidden; }
+
 .hide { display: none; }
+
+.highlight { color: #CA2128; }
 
 /*# sourceMappingURL=main.css.map */

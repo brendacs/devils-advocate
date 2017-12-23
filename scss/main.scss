@@ -6,10 +6,20 @@
         "header",
         "canvas",
         "typeform",
+        "about",
         "footer";
 
 @import "hamburgers/hamburgers.scss";
 
+body {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 .hide {
   display: none;
+}
+
+.highlight {
+  color: $brand-color;
 }
