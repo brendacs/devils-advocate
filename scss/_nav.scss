@@ -4,12 +4,6 @@
 #nav {
   height: 10vh;
 
-  #logo {
-    width: 50px;
-    margin-top: 5px;
-    margin-left: 10px;
-  }
-
   .hamburger {
     position: absolute;
     top: 3px;
@@ -19,13 +13,18 @@
 
 .nav-list {
   position: absolute;
-  top: 10;
-  padding-right: 30px;
+  top: 45px;
+  padding-right: 28px;
   transition: all 0.4s ease;
 
   li {
     padding-top: 20px;
     text-align: right;
+
+    @media screen and (max-width: 500px) {
+      padding-top: 22px;
+      margin-right: 10px;
+    }
 
     a {
       @include sans-serif-font;
@@ -34,13 +33,28 @@
       color: $secondary-color;
       font-size: 14px;
       transition: all 0.15s ease;
+
+      @media screen and (max-width: 350px) {
+        font-size: 12px;
+      }
     }
+  }
+
+  @media screen and (max-width: 500px) {
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    padding-right: 70px;
   }
 }
 
 .list-out {
   right: -299px;
   transition: all 0.4s ease;
+
+  @media screen and (max-width: 500px) {
+    right: -399px;
+  }
 }
 
 .list-in {
