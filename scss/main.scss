@@ -11,7 +11,8 @@
 
 @import "hamburgers/hamburgers.scss";
 
-body {
+html, body, .site-container {
+  position: relative;
   width: 100vw;
   overflow-x: hidden;
 }
