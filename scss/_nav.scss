@@ -27,7 +27,7 @@
     }
 
     a {
-      @include sans-serif-font;
+      @include primary-font;
       text-transform: uppercase;
       text-decoration: none;
       color: $secondary-color;

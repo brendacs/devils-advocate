@@ -24,7 +24,7 @@
   }
 
   h2 {
-    @include sans-serif-font;
+    @include primary-font;
     color: $secondary-color;
     font-size: 25px;
     margin: 20px 0 60px 0;

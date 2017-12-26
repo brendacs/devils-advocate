@@ -1,3 +1,8 @@
-@mixin sans-serif-font {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+@mixin primary-font {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 1px;
+}
+
+@mixin secondary-font {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, primary;
 }

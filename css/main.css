@@ -21,7 +21,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .nav-list { position: absolute; top: 45px; padding-right: 28px; transition: all 0.4s ease; }
 .nav-list li { padding-top: 20px; text-align: right; }
 @media screen and (max-width: 500px) { .nav-list li { padding-top: 22px; margin-right: 10px; } }
-.nav-list li a { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; text-transform: uppercase; text-decoration: none; color: #000; font-size: 14px; transition: all 0.15s ease; }
+.nav-list li a { font-family: "Playfair Display", serif; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #000; font-size: 14px; transition: all 0.15s ease; }
 @media screen and (max-width: 350px) { .nav-list li a { font-size: 12px; } }
 @media screen and (max-width: 500px) { .nav-list { top: 0; display: flex; flex-direction: row; padding-right: 70px; } }
 
@@ -37,7 +37,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 .landing-header .header-logo { margin-top: -60px; width: 60%; }
 @media screen and (max-width: 600px) { .landing-header .header-logo { width: 80%; } }
 @media screen and (max-width: 375px) { .landing-header .header-logo { width: 90%; } }
-.landing-header h2 { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #000; font-size: 25px; margin: 20px 0 60px 0; text-transform: uppercase; }
+.landing-header h2 { font-family: "Playfair Display", serif; letter-spacing: 1px; color: #000; font-size: 25px; margin: 20px 0 60px 0; text-transform: uppercase; }
 @media screen and (max-width: 600px) { .landing-header h2 { font-size: 20px; } }
 @media screen and (max-width: 425px) { .landing-header h2 { font-size: 16px; } }
 
@@ -48,7 +48,7 @@ table { border-collapse: collapse; border-spacing: 0; }
 canvas { background-color: #fff;
 } */
 /* scroll to typeform button */
-.typeform-button { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; display: inline-block; text-decoration: none; background-color: none; color: #CA2128; cursor: pointer; text-transform: uppercase; font-size: 20px; line-height: 50px; text-align: center; padding: 0 33px; height: 55px; border-radius: 5px; border: 3px solid #CA2128; max-width: 100%; white-space: nowrap; transition: all 0.15s ease; }
+.typeform-button { font-family: "Playfair Display", serif; letter-spacing: 1px; display: inline-block; text-decoration: none; background-color: none; color: #CA2128; cursor: pointer; text-transform: uppercase; font-size: 20px; line-height: 50px; text-align: center; padding: 0 33px; height: 55px; border-radius: 5px; border: 3px solid #CA2128; max-width: 100%; white-space: nowrap; transition: all 0.15s ease; }
 @media screen and (max-width: 375px) { .typeform-button { padding: 0 30px; height: 53px; font-size: 16px; } }
 
 /* typeform iframe */
@@ -59,23 +59,25 @@ canvas { background-color: #fff;
 /* hover */
 .typeform-button:hover { background-color: #CA2128; color: white; }
 
-#about .about-logo { width: 400px; }
+#about .about-logo { width: 400px; margin-top: -50px; }
 @media screen and (max-width: 600px) { #about .about-logo { width: 300px; } }
 @media screen and (max-width: 425px) { #about .about-logo { width: 250px; } }
 @media screen and (max-width: 320px) { #about .about-logo { display: none; } }
-#about h2 { font-size: 20px; }
+#about h2 { font-size: 20px; margin-bottom: 30px; }
 @media screen and (max-width: 600px) { #about h2 { font-size: 18px; margin-bottom: 40px; } }
 @media screen and (max-width: 425px) { #about h2 { margin-bottom: 30px; } }
 @media screen and (max-width: 320px) { #about h2 { font-size: 16px; margin-bottom: 20px; } }
-#about p { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; padding: 0px 200px 50px 200px; line-height: 1.5; }
+#about p { font-family: "Playfair Display", serif; letter-spacing: 1px; padding: 0px 200px 30px 200px; line-height: 1.5; }
 @media screen and (max-width: 1024px) { #about p { padding: 0px 75px 25px 75px; } }
 @media screen and (max-width: 600px) { #about p { padding: 0px 30px 20px 30px; } }
 @media screen and (max-width: 500px) { #about p { font-size: 14px; } }
 @media screen and (max-width: 375px) { #about p { font-size: 12px; } }
 @media screen and (max-width: 320px) { #about p { padding: 0px 30px 10px 30px; font-size: 11px; } }
 #about span { font-weight: bold; }
+#about a { font-family: "Playfair Display", serif; letter-spacing: 1px; text-transform: uppercase; text-decoration: none; color: #CA2128; font-size: 20px; transition: all 0.15s ease; }
+#about a:hover { opacity: 0.7; }
 
-.footer { font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif; height: 50px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0px 20px; font-size: 14px; }
+.footer { font-family: "Playfair Display", serif; letter-spacing: 1px; height: 50px; display: flex; flex-direction: row; justify-content: space-between; align-items: center; padding: 0px 20px; font-size: 14px; }
 .footer a, .footer span { color: #CA2128; transition: all 0.15s ease; }
 @media screen and (max-width: 600px) { .footer { font-size: 12px; } }
 @media screen and (max-width: 375px) { .footer { font-size: 10px; } }

@@ -2,7 +2,7 @@
         "mixins";
 
 .footer {
-  @include sans-serif-font;
+  @include primary-font;
   height: 50px;
   display: flex;
   flex-direction: row;
