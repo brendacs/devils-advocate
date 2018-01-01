@@ -3,3 +3,5 @@ node_modules/
 *.log
 auth.js
 bundle/
+css/main.css
+*.map
