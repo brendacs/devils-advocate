@@ -70,6 +70,7 @@ const calcScore = (latestAnswered) => {
   let scores;
 
   let results = {}
+  let showScore = '';
   for (let i = 0; i < latestAnswered.length; i++) {
     econScore = 0;
     doveScore = 0;
@@ -129,11 +130,11 @@ const calcScore = (latestAnswered) => {
     
     scores = [econScore, doveScore, socScore, nationScore, action, part, vote];
     results[email] = scores;
+    showScore += `${email}\nEconomic score: ${econScore}\nHawk/dove score: ${doveScore}
+Social score: ${socScore}\nNational score: ${nationScore}\nAction: ${action}\nPartisan: ${part}\nVotes: ${vote}\n\n`
   }
 
-  $('.admin__responses').html(`Economic score: ${econScore}\nHawk/dove score: ${doveScore}
-Social score: ${socScore}\nNational score: ${nationScore}\nAction: ${action}\nPartisan: ${part}\nVotes: ${vote}
-\n${JSON.stringify(results, undefined, 2)}`);
+  $('.admin__responses').html(`${showScore}\n\n${JSON.stringify(results, undefined, 2)}`);
 }
 
 document.getElementById('admin__get-responses').addEventListener('click', getData);
