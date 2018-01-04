@@ -16,7 +16,12 @@
   }
 }
 
-#admin__get-responses {
+.admin__button-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.admin__button {
   @include primary-font;
   height: 50px;
   width: 150px;
@@ -27,6 +32,7 @@
   font-size: 14px;
   opacity: 1;
   transition: all 0.25s ease;
+  margin: 0 10px 10px 10px;
 
   &:hover {
     background-color: #ef262e;

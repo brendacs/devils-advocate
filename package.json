@@ -15,7 +15,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack js/integrations.js bundle/integrations.js"
+    "build": "webpack js/api/integrations.js bundle/api/integrations.js"
   },
   "repository": {
     "type": "git",
