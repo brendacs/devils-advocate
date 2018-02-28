@@ -1,22 +1,23 @@
 #about {
   @include primary-font;
   margin: 0;
-  padding: 0px 30px 50px 60px;
   text-align: center;
 
   .about-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-bottom: 50px;
   }
 
   .about-text {
     flex: 2;
-    margin-right: 50px;
+    padding-left: 60px;
   }
 
   .about-links {
     flex: 1;
+    padding-left: 20px;
 
     .facebook, .twitter, .patreon {
       margin-top: 35px;
