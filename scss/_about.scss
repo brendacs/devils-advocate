@@ -19,8 +19,12 @@
     flex: 1;
     padding-left: 20px;
 
-    .facebook, .twitter, .patreon {
-      margin-top: 33px;
+    .patreon, .facebook {
+      margin-top: 25px;
+    }
+
+    .twitter {
+      margin-top: 30px;
     }
 
     #patreon-button {
