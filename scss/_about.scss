@@ -7,17 +7,57 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 50px;
+    padding: 0 40px 50px 40px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px 50px 20px;
+    }
   }
 
   .about-text {
     flex: 2;
-    padding-left: 60px;
+    padding-left: 40px;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+      padding-left: 0;
+    }
+
+    @media screen and (max-width: 468px) {
+      text-align: center;
+    }
+
+    h3 {
+      line-height: 1.5;
+      font-weight: bold;
+      padding: 20px 0;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    a {
+      @include primary-font;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: $brand-color;
+      font-size: 20px;
+      transition: all 0.15s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
   }
 
   .about-links {
     flex: 1;
     padding-left: 20px;
+
+    @media screen and (max-width: 468px) {
+      padding-left: 0;
+    }
 
     .patreon, .facebook {
       margin-top: 25px;
@@ -47,35 +87,6 @@
 
     @media screen and (max-width: 320px) {
       display: none;
-    }
-  }
-
-  h3 {
-    line-height: 1.5;
-    text-align: left;
-    font-weight: bold;
-    padding: 20px 0;
-  }
-
-  p {
-    line-height: 1.5;
-    text-align: left;
-  }
-
-  span {
-    font-weight: bold;
-  }
-
-  a {
-    @include primary-font;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: $brand-color;
-    font-size: 20px;
-    transition: all 0.15s ease;
-
-    &:hover {
-      opacity: 0.7;
     }
   }
 }
