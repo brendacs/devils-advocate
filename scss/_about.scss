@@ -33,6 +33,10 @@
       padding: 20px 0;
     }
 
+    p {
+      line-height: 1.5;
+    }
+
     span {
       font-weight: bold;
     }
@@ -59,12 +63,16 @@
       padding-left: 0;
     }
 
-    .patreon, .facebook {
+    .patreon {
       margin-top: 25px;
     }
 
+    .facebook {
+      margin-top: 45px;
+    }
+
     .twitter {
-      margin-top: 30px;
+      margin-top: 50px;
     }
 
     #patreon-button {
